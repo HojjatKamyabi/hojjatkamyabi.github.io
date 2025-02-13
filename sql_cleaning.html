@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SQL Data Cleaning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="/Icon.png">
+		
+	</head>
+	<body class="is-preload">
+		
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="container">
+				<li><a href="index.html">Home</a></li>
+				<li> | </li>
+				<li> contact me :</li>
+				<li><a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/hojjat-kamyabi-474595319/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a target="_blank" rel="noreferrer noopener" href="https://github.com/HojjatKamyabi" class="icon brands fa-github"><span class="label">Github</span></a></li>
+				
+			</ul>
+		</nav>
+
+		<!-- Home -->
+		<article id="top" class="wrapper style1">
+			<div class="container">
+
+				<H2>Motor Vehicle Repair and Towing Data Cleaning using SQL</H2>
+				<p><a target="_blank" rel="noreferrer noopener" href="https://github.com/HojjatKamyabi/sql_data_cleaning">Github Repository</a></p>
+				<br>
+				<h3>Overview</h3>
+				<p>For this project, I worked on cleaning and analyzing a dataset related to Motor Vehicle Repair and Towing services. The dataset contained inconsistencies such as duplicate records, incorrect formatting, missing values, and non-standardized data. Using SQL, I performed various data cleaning operations to ensure accuracy and reliability for further analysis.</p>
+				<br>
+				<h3>Steps Taken</h3>
+				<br>
+				<p><strong>1. Data Staging</strong></p>
+				<p>Before making any modifications to the original dataset, I created a staging table as a backup to preserve the raw data. This allowed for safe transformations without affecting the source data.</p>
+				<p><strong>2. Removing Duplicates</strong></p>
+				<p>To identify and remove duplicate records, I used a Common Table Expression (CTE) to assign row numbers based on duplicate groups. Then, I created a secondary staging table where only unique records were retained.</p>
+				<p><strong>3. Standardizing Data</strong></p>
+				<p>To improve consistency, I applied formatting rules such as trimming whitespace, correcting state abbreviations, and converting date fields from text to date format.</p>
+				<p><strong>4. Handling Missing Values</strong></p>
+				<p>To address missing values, I first replaced blank fields with NULL and then used self-joins to fill missing corporation names based on matching trade names.</p>
+				<p><strong>5. Exploratory Data Analysis (EDA)</strong></p>
+				<p>After cleaning the dataset, I conducted exploratory analysis to extract insights, such as:
+					
+						<p>- The number of repair businesses per city</p>
+						<p>- Monthly trend of issued registrations</p>
+						<p>- Ranking corporations by number of issued registrations per year</p>
+			
+				</p>
+				<br>
+				<p><strong>Conclusion</strong></p>
+				<p>Through this project, I demonstrated my ability to clean and prepare real-world data using SQL. The final dataset was free of duplicates, standardized, and structured for meaningful analysis.</p>
+
+
+				
+
+
+
+			</div>
+		</article>
+
+    </body>
+    </html>
