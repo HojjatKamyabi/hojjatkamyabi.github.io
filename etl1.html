@@ -31,23 +31,23 @@
 		<article id="top" class="wrapper style1">
 			<div class="container">
 
-                <h1>My first simple stock data ETL project</h1>
+                <h1>Stock data ETL project</h1>
 				<p><a target="_blank" rel="noreferrer noopener" href="https://github.com/HojjatKamyabi/First_ETL/tree/main">Github Repository</a></p>
 
 
-<h3>📌 Overview</h3>
+<h3> Overview</h3>
 <p>This project is a simple data pipeline that fetches stock price data from the Alpha Vantage API, processes it into a clean and structured format, and stores it in a PostgreSQL database for further analysis.</p> 
 
 <h3>Key features:</h3>
-✔   Data Fetching: Retrieves stock data (e.g., "TSLA") using the Alpha Vantage API.
+   <li>Data Fetching: Retrieves stock data (e.g., "TSLA") using the Alpha Vantage API.</li>
 <br>
-✔   Data Transformation: Converts raw JSON into a structured Pandas DataFrame, processes the data (e.g., converts to numeric values, computes a 5-day moving average), and ensures timestamps are correctly formatted.
+   <li>Data Transformation: Converts raw JSON into a structured Pandas DataFrame, processes the data (e.g., converts to numeric values, computes a 5-day moving average), and ensures timestamps are correctly formatted.</li>
 <br>
-✔   Database Integration: Stores the processed data into a PostgreSQL database table for persistence and scalability.
+   <li>Data Loading: Stores the processed data in a PostgreSQL database, creating a new table if it does not already exist.</li>
 <br>
-✔   Logging: Implements a robust logging mechanism to monitor pipeline progress and handle errors effectively.
+   <li>Logging: Utilizes the Python logging module to log messages to a file, providing information on the pipeline's execution.</li>
 <br>
-✔   Future updates will include Apache Airflow to automate and orchestrate the entire pipeline, enabling scheduling, monitoring, and enhanced workflow management.
+   <li>Configuration: Uses a configuration file to store API keys, database connection details, and other parameters, allowing for easy customization.</li>
 
 
 
