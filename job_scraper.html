@@ -31,49 +31,46 @@
 		<article id="top" class="wrapper style1">
 			<div class="container">
 
-                <h1>Job Skill Trends Analysis Across Germany</h1>
-				<p><a target="_blank" rel="noreferrer noopener" href="https://github.com/HojjatKamyabi/Linkedin_Market_Analysis">Github Repository</a></p>
-				<img src="./images/job_da.jpg" alt="excel project dashboard" style="max-width: 100%; height: auto;">
-				<br><br>
-				<h3>Overview</h3>
-<p>This project uses Python, web scraping, Airflow, PostgreSQL, and Power BI to collect and analyze job postings from LinkedIn and extract the most in-demand skills by city across Germany.</p>
-
-<h3>Overview</h3>
-Job Skill Trends Analysis is an end-to-end data analysis project that identifies the most in-demand technical skills across different cities and states in Germany. Using real job postings scraped from LinkedIn, the project automatically extracts job descriptions, identifies key skills, and visualizes them on an interactive dashboard. The goal is to help users understand which cities 
-require which skills most — valuable insight for job seekers, recruiters, and analysts.
+                <h1>Tracking Job Skill Trends in Germany</h1>
+<p><a target="_blank" rel="noreferrer noopener" href="https://github.com/HojjatKamyabi/Linkedin_Market_Analysis">View on GitHub</a></p>
+<img src="./images/job_da.jpg" alt="Power BI dashboard of job skill trends" style="max-width: 100%; height: auto;">
 <br><br>
 
-<h3> Tools & Technologies Used </h3>
+<p>This project is about understanding what tech skills companies are looking for in different parts of Germany. I used data from LinkedIn job posts and turned it into an interactive map that shows which skills are most popular in each region.</p>
 
-<li>Web Scraping: Python, BeautifulSoup, Selenium</li>
+<h2>What’s the Goal?</h2>
+<p>To help job seekers and recruiters see which tech skills are in high demand based on location, so they can make better decisions about where to apply, hire, or upskill.</p>
 
-<li>Data Workflow Orchestration: Apache Airflow (Dockerized)</li>
+<h2>How It Works</h2>
+<p>The project has three main steps:</p>
+<ul>
+    <li><strong>Collect Data:</strong> I built a Python web scraper to pull job postings from LinkedIn. It saves the job title, description, location, and more.</li>
+    <li><strong>Extract Skills:</strong> Using text analysis, the scraper detects tech skills mentioned in each job description. I used tools like regex and fuzzy matching (RapidFuzz) to make it accurate.</li>
+    <li><strong>Visualize the Results:</strong> All the data is stored in PostgreSQL and connected to a Power BI dashboard. The map shows how popular each skill is by city or state. When you hover over a region, it shows the top skill and its count.</li>
+</ul>
 
-<li>
-    Containerization: Docker, Docker Compose
-</li>
-<li>
-    Data Storage: PostgreSQL
-</li>
-<li>
-    Skill Extraction: Regex and rapidfuz
-</li>
-<li>
-    Dashboarding: Power BI
-</li>
-<br>
-<h3> Key Features </h3>
-<li>
-    Automated Pipeline: Uses Apache Airflow to schedule scraping and processing tasks. Each job posting is fetched, cleaned, and stored in PostgreSQL automatically.
-</li>
+<h2>Tools I Used</h2>
+<ul>
+    <li><strong>Python</strong> – for scraping and cleaning data</li>
+    <li><strong>BeautifulSoup & Selenium</strong> – to extract content from job pages</li>
+    <li><strong>Apache Airflow</strong> – to automate the whole process on a schedule</li>
+    <li><strong>Docker</strong> – to containerize everything so it runs smoothly</li>
+    <li><strong>PostgreSQL</strong> – as the database for all cleaned job and skill data</li>
+    <li><strong>Power BI</strong> – to build the interactive dashboard</li>
+</ul>
 
-<li>
-    Skill Extraction: Utilizes regex and rapidfuz to identify and extract relevant skills from job descriptions, ensuring accurate and efficient data processing.
-</li>
+<h2>What You Can See in the PowerBI Dashboard</h2>
+<ul>
+	<li>KPIS, including, most in demand skill in all states, total skills extracted , and last scrape time.</li>
+    <li>A map of Germany showing demand for skills like Python, SQL, AWS, etc. in different states.</li>
+    <li>Hovering over a location shows the most requested skill and how many times it appeared</li>
+</ul>
 
-<li>
-    Data Visualization: Dashboard built in Power BI, connected directly to the PostgreSQL database. Hovering over a region reveals: Most requested skill, Count of that skill.
-</li>
+<h2>Why This Matters</h2>
+<p>Understanding job market trends helps professionals focus on the right skills and find better job opportunities. This tool makes that easier by showing the data in a simple, visual way.</p>
+
+<h2>See the Code</h2>
+<p>All code and setup instructions are available on <a target="_blank" href="https://github.com/HojjatKamyabi/Linkedin_Market_Analysis">GitHub</a>. You can even run the whole project locally using Docker.</p>
 
             </div>
 		</article>
