@@ -6,12 +6,183 @@
 -->
 <html>
 	<head>
-		<title>PowerBI Project</title>
+		<title>Car Sales Dashboard - Hojjat's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="/Icon.png">
-		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			:root {
+				--accent-color: #4361ee;
+				--heading-color: #1d3557;
+				--text-color: #5c62a3;
+				--light-bg: #f8f9fa;
+			}
+			
+			body {
+				font-family: 'Poppins', sans-serif;
+				line-height: 1.7;
+				color: var(--text-color);
+			}
+			
+			h1, h2, h3, h4, .container h1, header h1, header h2 {
+				font-family: 'Roboto Slab', serif;
+				color: var(--heading-color);
+				font-weight: 700;
+				letter-spacing: -0.02em;
+				margin-top: 1.5em;
+				margin-bottom: 0.8em;
+			}
+			
+			/* Keep original nav styling */
+			#nav {
+				font-family: inherit; /* Use the original font from main.css */
+			}
+			
+			#nav ul li {
+				font-family: inherit; /* Use the original font from main.css */
+			}
+			
+			#nav ul li a {
+				font-family: inherit; /* Use the original font from main.css */
+			}
+			
+			h1 {
+				font-size: 2.8rem;
+				position: relative;
+			}
+			
+			h1::after {
+				content: "";
+				display: block;
+				width: 80px;
+				height: 4px;
+				background: var(--accent-color);
+				margin-top: 0.5rem;
+			}
+			
+			h2 {
+				font-size: 1.8rem;
+				border-left: 4px solid var(--accent-color);
+				padding-left: 15px;
+			}
+			
+			h3 {
+				font-size: 1.3rem;
+				color: var(--accent-color);
+			}
+			
+			p {
+				margin-bottom: 1.5rem;
+				font-weight: 300;
+				font-size: 1.05rem;
+			}
+			
+			ul {
+				padding-left: 1.2rem;
+			}
+			
+			li {
+				margin-bottom: 0.5rem;
+			}
+			
+			strong {
+				font-weight: 600;
+				color: var(--heading-color);
+			}
+			
+			a {
+				color: var(--accent-color);
+				text-decoration: none;
+				transition: all 0.2s ease;
+				font-weight: 500;
+			}
+			
+			a:hover {
+				color: #2d3fe1;
+				text-decoration: underline;
+			}
+			
+			.code-block {
+				background-color: #f5f5f5;
+				border-radius: 4px;
+				padding: 12px 16px;
+				font-family: monospace;
+				display: inline-block;
+				margin: 10px 0;
+				border-left: 3px solid var(--accent-color);
+			}
+			
+			.project-image {
+				max-width: 100%;
+				height: auto;
+				border-radius: 8px;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+				margin: 20px 0;
+			}
+			
+			.github-link {
+				display: inline-flex;
+				align-items: center;
+				background-color: var(--light-bg);
+				padding: 8px 16px;
+				border-radius: 30px;
+				margin-bottom: 25px;
+				transition: all 0.3s ease;
+				font-weight: 500;
+			}
+			
+			.github-link:hover {
+				background-color: #e9ecef;
+				transform: translateY(-2px);
+				text-decoration: none;
+			}
+			
+			.github-link i {
+				margin-right: 8px;
+			}
+			
+			.feature-list li {
+				position: relative;
+				padding-left: 20px;
+			}
+			
+			.feature-list li::before {
+				content: "•";
+				color: var(--accent-color);
+				font-weight: bold;
+				position: absolute;
+				left: 0;
+			}
+			
+			.insights-section {
+				background-color: var(--light-bg);
+				border-radius: 8px;
+				padding: 20px 25px;
+				margin: 25px 0;
+			}
+			
+			.steps-section {
+				margin: 30px 0;
+			}
+			
+			.step-number {
+				background-color: var(--accent-color);
+				color: white;
+				width: 28px;
+				height: 28px;
+				border-radius: 50%;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 10px;
+				font-weight: 600;
+				font-size: 0.9rem;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		
@@ -23,78 +194,146 @@
 				<li> contact me :</li>
 				<li><a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/hojjat-kamyabi-474595319/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 				<li><a target="_blank" rel="noreferrer noopener" href="https://github.com/HojjatKamyabi" class="icon brands fa-github"><span class="label">Github</span></a></li>
-				
 			</ul>
 		</nav>
 
-        <!-- Home -->
+		<!-- Project Content -->
 		<article id="top" class="wrapper style1">
 			<div class="container">
+				<header>
+					<h1>Car Sales Dashboard - Power BI</h1>
+				</header>
 
+				<a href="https://github.com/HojjatKamyabi/PowerBI_Car_Sale" target="_blank" rel="noreferrer noopener" class="github-link">
+					<i class="icon brands fa-github"></i> View Project on GitHub
+				</a>
+				
+				<img src="./images/Powerbi.png" alt="Car Sales Dashboard" class="project-image">
 
+				<section>
+					<h2>Project Overview</h2>
+					<p>
+						This <strong>Car Sales Dashboard</strong> provides an interactive and data-driven analysis of car sales in <strong>Germany</strong>.
+						It offers insights into sales trends, average prices, mileage, fuel types, and the most popular car models.
+						The dashboard allows users to filter data by <strong>brand, fuel type, and year</strong>, making it a useful tool for understanding 
+						market trends and supporting data-driven decision making in the automotive sector.
+					</p>
+				</section>
 
-<h1> Car Sales Dashboard - Power BI</h1>
+				<section>
+					<h2>Dataset</h2>
+					<p>
+						<strong>Source:</strong> AutoScout24 Germany, a popular car marketplace
+					</p>
+					<p>
+						<strong>Description:</strong> The dataset includes comprehensive information about vehicle sales:
+					</p>
+					<ul class="feature-list">
+						<li>Car brands and models</li>
+						<li>Manufacturing year</li>
+						<li>Mileage information</li>
+						<li>Fuel type (Gasoline, Diesel, Electric/Gasoline)</li>
+						<li>Pricing data</li>
+						<li>Sales volume</li>
+					</ul>
+				</section>
 
-<p><a target="_blank" rel="noreferrer noopener" href="https://github.com/HojjatKamyabi/PowerBI_Car_Sale">Github Repository</a></p>
-<img src="./images/dashboard.png" alt="excel project dashboard" style="max-width: 100%; height: auto;">
-<br><br>
-<h2>Overview</h2>
-<p>
-This <strong>Car Sales Dashboard</strong> provides an interactive and data-driven analysis of car sales in <strong>Germany</strong>. 
-It offers insights into sales trends, average prices, mileage, fuel types, and the most popular car models. 
-The dashboard allows users to filter data by <strong>brand, fuel type, and year</strong>, making it a useful tool for understanding market trends.
-</p>
-<br>
-<h2>Key Features</h2>
-<br>
-<h3>KPIs Overview</h3>
-<ul>
-  <li><strong>Total Average Price:</strong> Displays the average price of all cars in the dataset.</li>
-  <li><strong>Total Sales Number:</strong> Shows the total number of cars sold.</li>
-  <li><strong>Most Popular Car:</strong> Identifies the car model with the highest number of sales.</li>
-</ul>
+				<section class="insights-section">
+					<h2>Key Performance Indicators</h2>
+					<ul class="feature-list">
+						<li><strong>Total Average Price:</strong> Displays the average price of all cars in the dataset</li>
+						<li><strong>Total Sales Number:</strong> Shows the total number of cars sold</li>
+						<li><strong>Most Popular Car:</strong> Identifies the car model with the highest number of sales</li>
+						<li><strong>Average Mileage:</strong> Presents the average mileage across all vehicles</li>
+						<li><strong>Average Vehicle Age:</strong> Calculates the average age of vehicles in the dataset</li>
+					</ul>
+				</section>
 
-<h3>Interactive Filters</h3>
-<ul>
-  <li><strong>Brand Selector:</strong> Allows users to filter sales by a specific car brand.</li>
-  <li><strong>Fuel Type Filter:</strong> Segments the data based on fuel type (Gasoline, Diesel, Electric/Gasoline).</li>
-  <li><strong>Year Range Slider:</strong> Enables users to analyze sales data within a specific year range.</li>
-</ul>
+				<section class="steps-section">
+					<h2>Dashboard Components</h2>
+					
+					<h3><span class="step-number">1</span> Interactive Filters</h3>
+					<ul class="feature-list">
+						<li><strong>Brand Selector:</strong> Allows users to filter sales by a specific car brand</li>
+						<li><strong>Fuel Type Filter:</strong> Segments the data based on fuel type (Gasoline, Diesel, Electric/Gasoline)</li>
+						<li><strong>Year Range Slider:</strong> Enables users to analyze sales data within a specific year range</li>
+						<li><strong>Price Range Filter:</strong> Lets users focus on specific price segments</li>
+					</ul>
 
-<h3>Data Visualizations</h3>
-<ul>
-  <li><strong>Top 10 Models - Average Year:</strong> Line chart showing the average manufacturing year of the top 10 car models.</li>
-  <li><strong>Top 10 Models - Average Mileage:</strong> Line chart analyzing the average mileage of the top 10 car models.</li>
-  <li><strong>Fuel Type Distribution:</strong> Pie chart illustrating the share of different fuel types in the dataset.</li>
-  <li><strong>Top 10 Car Models Summary:</strong> Table displaying key statistics, including price average, number of sales, and total revenue per model.</li>
-</ul>
+					<h3><span class="step-number">2</span> Data Visualizations</h3>
+					<ul class="feature-list">
+						<li><strong>Top 10 Models - Average Year:</strong> Line chart showing the average manufacturing year of the top 10 car models</li>
+						<li><strong>Top 10 Models - Average Mileage:</strong> Line chart analyzing the average mileage of the top 10 car models</li>
+						<li><strong>Fuel Type Distribution:</strong> Pie chart illustrating the share of different fuel types in the dataset</li>
+						<li><strong>Price Trend Analysis:</strong> Area chart showing pricing trends over time</li>
+					</ul>
 
-<h2>Data Source</h2>
-<p>
-The dataset is sourced from <strong>AutoScout24 Germany</strong>, a popular car marketplace. It includes information on <strong>car brands, models, mileage, fuel type, year, and pricing</strong>.
-</p>
+					<h3><span class="step-number">3</span> Summary Tables</h3>
+					<ul class="feature-list">
+						<li><strong>Top 10 Car Models Summary:</strong> Table displaying key statistics including price average, number of sales, and total revenue per model</li>
+						<li><strong>Brand Performance Matrix:</strong> Comparative analysis of different brands by sales volume and average price</li>
+						<li><strong>Year-over-Year Comparison:</strong> Summary of sales performance across different years</li>
+					</ul>
+				</section>
 
-<h2>Technologies Used</h2>
-<ul>
-  <li><strong>Power BI</strong> for data visualization</li>
-  <li><strong>DAX</strong> for creating KPIs and measures</li>
-  <li><strong>Excel (XLSX Dataset)</strong> for data storage</li>
-</ul>
+				<section>
+					<h2>Technical Implementation</h2>
+					<ul class="feature-list">
+						<li><strong>Data Modeling:</strong> Created relationships between different data tables for comprehensive analysis</li>
+						<li><strong>DAX Measures:</strong> Developed custom DAX formulas to calculate KPIs and metrics</li>
+						<li><strong>Advanced Visuals:</strong> Implemented custom visuals for enhanced data representation</li>
+						<li><strong>Slicers & Filters:</strong> Configured interactive filtering capabilities for user-driven analysis</li>
+						<li><strong>Data Transformation:</strong> Applied Power Query for data cleaning and preparation</li>
+					</ul>
+				</section>
 
-<h2>How to Use the Dashboard</h2>
-<ol>
-  <li>Download the Power BI file (.PBIX) from this repository.</li>
-  <li>Open it using <strong>Microsoft Power BI Desktop</strong>.</li>
-  <li>Use the interactive filters to analyze car sales trends.</li>
-  <li>Gain insights into the most popular models, average prices, and sales distribution.</li>
-</ol>
+				<section>
+					<h2>How to Use the Dashboard</h2>
+					<p>To explore this interactive dashboard on your local machine:</p>
+					
+					<p><strong>1. Download the Power BI file:</strong></p>
+					<div class="code-block">
+						Download the .PBIX file from GitHub: https://github.com/HojjatKamyabi/PowerBI_Car_Sale
+					</div>
+					
+					<p><strong>2. Open with Power BI Desktop:</strong></p>
+					<div class="code-block">
+						Open the file using Microsoft Power BI Desktop (free download from Microsoft)
+					</div>
+					
+					<p><strong>3. Using the dashboard:</strong></p>
+					<ul class="feature-list">
+						<li>Use the interactive filters on the right panel to segment the data by your criteria of interest</li>
+						<li>Hover over charts for detailed tooltips with additional information</li>
+						<li>Click on segments in charts to cross-filter other visualizations</li>
+						<li>Use the navigation buttons at the top to switch between different views</li>
+						<li>Export insights as images or PDF reports using Power BI's export functionality</li>
+					</ul>
+				</section>
 
+				<section>
+					<h2>Tools & Technologies</h2>
+					<ul class="feature-list">
+						<li><strong>Microsoft Power BI:</strong> Primary development platform</li>
+						<li><strong>DAX (Data Analysis Expressions):</strong> For creating measures and calculated columns</li>
+						<li><strong>Power Query:</strong> For data transformation and preparation</li>
+						<li><strong>Excel:</strong> Source data storage format</li>
+						<li><strong>Custom Visuals:</strong> Enhanced visualization components</li>
+					</ul>
+				</section>
 
-
-
-
-            </div>
+				<footer style="margin-top: 50px; text-align: center;">
+					<p><a href="index.html" class="button">Back to Portfolio</a></p>
+				</footer>
+			</div>
 		</article>
 
-    </body>
-    </html>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
