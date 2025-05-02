@@ -59,6 +59,43 @@
     <li><strong>Power BI</strong> – to build the interactive dashboard</li>
 </ul>
 
+				<br>
+				
+				<h2>The Main Scraper</h2>
+<p>The script scrapes <strong>LinkedIn Jobs</strong> to find job postings based on a specific role (e.g., data analyst) and location (e.g., Germany).</p>
+
+<h3>Which tools are used?</h3>
+<p>
+  This project uses two main tools:
+  <ul>
+    <li><strong>Selenium</strong> to automate the browser and interact with job elements</li>
+    <li><strong>BeautifulSoup</strong> to parse and clean job descriptions from HTML</li>
+  </ul>
+</p>
+
+<h3>What data is extracted?</h3>
+<p>The scraper collects the following information from each job listing:</p>
+<ul>
+  <li>Job title</li>
+  <li>Company name</li>
+  <li>Location</li>
+  <li>Date posted</li>
+  <li>Full job description</li>
+  <li>Job link</li>
+  <li>Scrape date and time</li>
+</ul>
+
+<h3>How are pagination, delays, and anti-bot protection handled?</h3>
+<p>
+  The script scrolls the page several times to load more job listings, simulating real user behavior. It uses time delays (3 seconds) between actions to reduce the chance of being blocked. Each job link is opened in a new browser tab, data is extracted, and the tab is closed, mimicking natural browsing patterns.
+</p>
+
+<h3>Where is the data stored?</h3>
+<p>
+  All extracted job data is saved into a <strong>PostgreSQL database</strong> using the <code>psycopg2</code> library. The script avoids duplicate entries by checking if the job link already exists before inserting.
+</p>
+<br>
+
 <h2>What You Can See in the PowerBI Dashboard</h2>
 <ul>
 	<li>KPIS, including, most in demand skill in all states, total skills extracted , and last scrape time.</li>
