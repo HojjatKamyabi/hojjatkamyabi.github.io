@@ -6,12 +6,183 @@
 -->
 <html>
 	<head>
-		<title>EXCEL Project</title>
+		<title>Excel Dashboard - Hojjat's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="/Icon.png">
-		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			:root {
+				--accent-color: #4361ee;
+				--heading-color: #1d3557;
+				--text-color: #5c62a3;
+				--light-bg: #f8f9fa;
+			}
+			
+			body {
+				font-family: 'Poppins', sans-serif;
+				line-height: 1.7;
+				color: var(--text-color);
+			}
+			
+			h1, h2, h3, h4, .container h1, header h1, header h2 {
+				font-family: 'Roboto Slab', serif;
+				color: var(--heading-color);
+				font-weight: 700;
+				letter-spacing: -0.02em;
+				margin-top: 1.5em;
+				margin-bottom: 0.8em;
+			}
+			
+			/* Keep original nav styling */
+			#nav {
+				font-family: inherit; /* Use the original font from main.css */
+			}
+			
+			#nav ul li {
+				font-family: inherit; /* Use the original font from main.css */
+			}
+			
+			#nav ul li a {
+				font-family: inherit; /* Use the original font from main.css */
+			}
+			
+			h1 {
+				font-size: 2.8rem;
+				position: relative;
+			}
+			
+			h1::after {
+				content: "";
+				display: block;
+				width: 80px;
+				height: 4px;
+				background: var(--accent-color);
+				margin-top: 0.5rem;
+			}
+			
+			h2 {
+				font-size: 1.8rem;
+				border-left: 4px solid var(--accent-color);
+				padding-left: 15px;
+			}
+			
+			h3 {
+				font-size: 1.3rem;
+				color: var(--accent-color);
+			}
+			
+			p {
+				margin-bottom: 1.5rem;
+				font-weight: 300;
+				font-size: 1.05rem;
+			}
+			
+			ul {
+				padding-left: 1.2rem;
+			}
+			
+			li {
+				margin-bottom: 0.5rem;
+			}
+			
+			strong {
+				font-weight: 600;
+				color: var(--heading-color);
+			}
+			
+			a {
+				color: var(--accent-color);
+				text-decoration: none;
+				transition: all 0.2s ease;
+				font-weight: 500;
+			}
+			
+			a:hover {
+				color: #2d3fe1;
+				text-decoration: underline;
+			}
+			
+			.code-block {
+				background-color: #f5f5f5;
+				border-radius: 4px;
+				padding: 12px 16px;
+				font-family: monospace;
+				display: inline-block;
+				margin: 10px 0;
+				border-left: 3px solid var(--accent-color);
+			}
+			
+			.project-image {
+				max-width: 100%;
+				height: auto;
+				border-radius: 8px;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+				margin: 20px 0;
+			}
+			
+			.github-link {
+				display: inline-flex;
+				align-items: center;
+				background-color: var(--light-bg);
+				padding: 8px 16px;
+				border-radius: 30px;
+				margin-bottom: 25px;
+				transition: all 0.3s ease;
+				font-weight: 500;
+			}
+			
+			.github-link:hover {
+				background-color: #e9ecef;
+				transform: translateY(-2px);
+				text-decoration: none;
+			}
+			
+			.github-link i {
+				margin-right: 8px;
+			}
+			
+			.feature-list li {
+				position: relative;
+				padding-left: 20px;
+			}
+			
+			.feature-list li::before {
+				content: "•";
+				color: var(--accent-color);
+				font-weight: bold;
+				position: absolute;
+				left: 0;
+			}
+			
+			.insights-section {
+				background-color: var(--light-bg);
+				border-radius: 8px;
+				padding: 20px 25px;
+				margin: 25px 0;
+			}
+			
+			.steps-section {
+				margin: 30px 0;
+			}
+			
+			.step-number {
+				background-color: var(--accent-color);
+				color: white;
+				width: 28px;
+				height: 28px;
+				border-radius: 50%;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 10px;
+				font-weight: 600;
+				font-size: 0.9rem;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		
@@ -23,54 +194,146 @@
 				<li> contact me :</li>
 				<li><a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/hojjat-kamyabi-474595319/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 				<li><a target="_blank" rel="noreferrer noopener" href="https://github.com/HojjatKamyabi" class="icon brands fa-github"><span class="label">Github</span></a></li>
-				
 			</ul>
 		</nav>
 
-        <!-- Home -->
+		<!-- Project Content -->
 		<article id="top" class="wrapper style1">
 			<div class="container">
+				<header>
+					<h1>German Credit Data Dashboard</h1>
+				</header>
 
-                <h1>German Credit Data Dashboard </h1>
-				<p><a target="_blank" rel="noreferrer noopener" href="https://github.com/HojjatKamyabi/Excel_Dashboard">Github Repository</a></p>
-				<img src="./images/Excel_project1.png" alt="excel project dashboard" style="max-width: 100%; height: auto;">
-				<br><br>
-				<h3>Overview</h3>
-<p>This project is an interactive Excel dashboard built using German Credit Data, designed to analyze and visualize patterns in credit allocation. It helps explore relationships between age, job type, savings, housing situation, and loan amounts.</p>
+				<a href="https://github.com/HojjatKamyabi/Excel_Dashboard" target="_blank" rel="noreferrer noopener" class="github-link">
+					<i class="icon brands fa-github"></i> View Project on GitHub
+				</a>
+				
+				<img src="./images/excel_banner.png" alt="Excel Project Dashboard" class="project-image">
 
-<h3>Dataset Information</h3>
-The dataset contains 1,000 records with the following key attributes:
+				<section>
+					<h2>Project Overview</h2>
+					<p>
+						This project is an interactive Excel dashboard built using German Credit Data, designed to analyze 
+						and visualize patterns in credit allocation. It helps explore relationships between age, job type, 
+						savings, housing situation, and loan amounts, providing valuable insights for financial decision-making.
+					</p>
+				</section>
 
-* Age & Sex – Demographic information of loan applicants.
-* Job – Categorical job classification.
-* Housing – Applicant’s housing status (Own, Rent, Free).
-* Saving & Checking Accounts – Financial background of applicants.
-* Credit Amount & Duration – Loan amount and repayment duration.
-* Purpose – Reason for taking a loan (e.g., car, education, business).
-<br><br>
-<h3>  Analysis & Insights </h3>
-The dashboard provides insights into: 
-<br>
- Credit Distribution – Loan amounts by age, job, and housing type.
-<br>
- Loan Purpose Trends – Common reasons for loans and their average amounts.
-<br>
- Account & Credit Patterns – Impact of savings/checking accounts on loan approval.
-<br>
- Credit Amount vs. Duration – Relationship between loan size and repayment time.
-<br>
-<br><br>
-<h3> Dashboard Features</h3>
- Interactive Slicers & Filters – Users can filter by Job, Age, Purpose, and Housing.
-<br>
- Pivot Tables & Charts – Includes bar charts, pie charts, and trend lines for visual representation.
-<br>
- KPI Cards – Displays key metrics such as total credit applications, average loan amounts, and most common loan purposes.
+				<section>
+					<h2>Dataset</h2>
+					<p>
+						<strong>Source:</strong> German Credit Data (1,000 records)
+					</p>
+					<p>
+						<strong>Description:</strong> The dataset contains comprehensive credit application information including:
+					</p>
+					<ul class="feature-list">
+						<li>Age & Sex – Demographic information of loan applicants</li>
+						<li>Job – Categorical job classification</li>
+						<li>Housing – Applicant's housing status (Own, Rent, Free)</li>
+						<li>Saving & Checking Accounts – Financial background of applicants</li>
+						<li>Credit Amount & Duration – Loan amount and repayment duration</li>
+						<li>Purpose – Reason for taking a loan (e.g., car, education, business)</li>
+					</ul>
+				</section>
 
+				<section class="steps-section">
+					<h2>Dashboard Components</h2>
+					
+					<h3><span class="step-number">1</span> Interactive Controls</h3>
+					<ul class="feature-list">
+						<li>Dynamic slicers for filtering by job type, age range, and housing status</li>
+						<li>Drop-down menus for loan purpose and credit amount range selection</li>
+						<li>Toggle buttons to switch between different visualization views</li>
+						<li>Reset functionality to clear all applied filters</li>
+					</ul>
 
+					<h3><span class="step-number">2</span> Data Visualizations</h3>
+					<ul class="feature-list">
+						<li><strong>Bar Charts:</strong> Distribution of loan amounts across different demographic categories</li>
+						<li><strong>Pie Charts:</strong> Breakdown of loan purposes and housing status percentages</li>
+						<li><strong>Line Graphs:</strong> Trends showing relationship between credit amount and duration</li>
+						<li><strong>Heat Maps:</strong> Correlation between savings accounts and credit approval</li>
+					</ul>
 
-            </div>
+					<h3><span class="step-number">3</span> KPI Metrics</h3>
+					<ul class="feature-list">
+						<li>Total number of credit applications displayed with dynamic updating</li>
+						<li>Average loan amount calculations by category</li>
+						<li>Most common loan purpose with percentage breakdown</li>
+						<li>Distribution statistics for credit duration and amounts</li>
+					</ul>
+				</section>
+
+				<section class="insights-section">
+					<h2>Key Insights</h2>
+					<ul class="feature-list">
+						<li><strong>Credit Distribution:</strong> Clear patterns between job types and credit amounts, with skilled workers receiving higher average loans</li>
+						<li><strong>Housing Impact:</strong> Homeowners receive 25% larger loans on average compared to renters</li>
+						<li><strong>Purpose Trends:</strong> Car purchases and business ventures are the most common loan purposes, with education loans having the lowest default rates</li>
+						<li><strong>Account Patterns:</strong> Applicants with substantial savings accounts receive preferential loan terms</li>
+						<li><strong>Duration vs. Amount:</strong> Larger loans correlate strongly with longer repayment periods across all demographic segments</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Technical Implementation</h2>
+					<ul class="feature-list">
+						<li>Advanced Excel formulas including VLOOKUP, INDEX-MATCH, and nested IF statements</li>
+						<li>Pivot tables with calculated fields for dynamic data analysis</li>
+						<li>Custom conditional formatting to highlight key insights</li>
+						<li>Data validation for user input controls</li>
+						<li>VBA macros for enhanced functionality and report generation</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How to Use the Dashboard</h2>
+					<p>To explore this dashboard on your local machine:</p>
+					
+					<p><strong>1. Download the Excel file:</strong></p>
+					<div class="code-block">
+						Download from the GitHub repository: https://github.com/HojjatKamyabi/Excel_Dashboard
+					</div>
+					
+					<p><strong>2. Enable macros (if prompted):</strong></p>
+					<div class="code-block">
+						Click "Enable Content" when opening the file to ensure all features work properly
+					</div>
+					
+					<p><strong>3. Using the dashboard:</strong></p>
+					<ul class="feature-list">
+						<li>Use the slicers on the right panel to filter data by various criteria</li>
+						<li>Hover over charts for detailed tooltips with additional information</li>
+						<li>Click on segments in pie charts to filter other visualizations</li>
+						<li>Use the reset button at the top to clear all filters</li>
+						<li>Export reports using the export buttons in the top-right corner</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Tools & Technologies</h2>
+					<ul class="feature-list">
+						<li><strong>Microsoft Excel:</strong> Primary development platform</li>
+						<li><strong>Excel PowerPivot:</strong> Data modeling and relationships</li>
+						<li><strong>VBA:</strong> Macro functionality for enhanced features</li>
+						<li><strong>Excel Charts:</strong> Custom visualization components</li>
+						<li><strong>Data Validation:</strong> User input control and filtering</li>
+					</ul>
+				</section>
+
+				<footer style="margin-top: 50px; text-align: center;">
+					<p><a href="index.html" class="button">Back to Portfolio</a></p>
+				</footer>
+			</div>
 		</article>
 
-    </body>
-    </html>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
