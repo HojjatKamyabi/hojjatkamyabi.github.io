@@ -187,11 +187,11 @@
                 <br>
                 
                 <h2>The Main Scraper</h2>
-                <p>The script scrapes <strong>LinkedIn Jobs</strong> to find job postings based on a specific role (e.g., data analyst) and location (e.g., Germany).</p>
+                <p>The script scrapes <strong>LinkedIn Jobs</strong> to find job postings based on a specific role (data analyst) and location (e.g., Rheinland-Pfalz).</p>
 
                 <h3>Which tools are used?</h3>
                 <p>
-                This project uses two main tools:
+                It has two main libraries:
                 <ul>
                     <li><strong>Selenium</strong> to automate the browser and interact with job elements</li>
                     <li><strong>BeautifulSoup</strong> to parse and clean job descriptions from HTML</li>
@@ -210,7 +210,7 @@
                 <li>Scrape date and time</li>
                 </ul>
 
-                <h3>How are pagination, delays, and anti-bot protection handled?</h3>
+                <h3>How are delays, and anti-bot protection handled?</h3>
                 <p>
                 The script scrolls the page several times to load more job listings, simulating real user behavior. It uses time delays (3 seconds) between actions to reduce the chance of being blocked. Each job link is opened in a new browser tab, data is extracted, and the tab is closed, mimicking natural browsing patterns.
                 </p>
@@ -237,18 +237,13 @@
 
                     <h4>What are its tasks?</h4>
                     <p>
-                    It has one task:
+                    
                     <ul>
                         <li><strong>run_scraper</strong>: This task runs a Bash command that changes the directory to the scraper folder and executes <code>main.py</code>, the main scraping script.</li>
                     </ul>
-                    </p>
+                    
 
-                    <h4>Are there any dependencies?</h4>
-                    <p>
-                    No task dependencies in this DAG since it only has one task.
-                    </p>
-
-                    <h4>Any special handling or error checking?</h4>
+                    <h4>Special handling or error checking</h4>
                     <p>
                     The DAG has basic retry logic: if the task fails, it will retry once after a 5-minute delay.
                     </p>
@@ -271,18 +266,12 @@
 
                     <h4>What are its tasks?</h4>
                     <p>
-                    It has one task:
+               
                     <ul>
                         <li><strong>extract_skills</strong>: A Python function that connects to the database, analyzes job descriptions, detects key skills based on a predefined list, and updates the database with the results.</li>
                     </ul>
-                    </p>
-
-                    <h4>Are there any dependencies?</h4>
-                    <p>
-                    No task dependencies, as the DAG includes only one task.
-                    </p>
-
-                    <h4>Any special handling or error checking?</h4>
+                   
+                    <h4>Special handling or error checking</h4>
                     <p>
                     The DAG will retry the task up to 2 times if it fails, with a 5-minute delay between retries. The skill matching uses a fuzzy logic threshold to ensure relevant results.
                     </p>
@@ -295,7 +284,7 @@
                 
                     <h3>Components</h3>
                     <ul>
-                    <li><strong>PostgreSQL:</strong> A dedicated container runs PostgreSQL 15, acting as the central database to store the scraped job data.</li>
+                    <li><strong>PostgreSQL:</strong> A dedicated container runs PostgreSQL 15, as the central database to store the scraped job data.</li>
                     <li><strong>Scraper:</strong> Built with a minimal <code>python:3.10-slim</code> base image, this container runs a Python script that scrapes job listings using Selenium and Chrome in headless mode.</li>
                     <li><strong>Apache Airflow:</strong> Two separate containers for the Airflow <strong>webserver</strong> and <strong>scheduler</strong> were created, both customized to support scraping tasks and orchestration of jobs.</li>
                     </ul>
