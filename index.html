@@ -11,6 +11,175 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="/Icon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			:root {
+				--accent-color: #4361ee;
+				--heading-color: #1d3557;
+				--text-color: #5c62a3;
+				--light-bg: #f8f9fa;
+			}
+			
+			body {
+				font-family: 'Poppins', sans-serif;
+				line-height: 1.7;
+				color: var(--text-color);
+			}
+			
+			h1, h2, h3, h4, .container h1, header h1, header h2 {
+				font-family: 'Roboto Slab', serif;
+				color: var(--heading-color);
+				font-weight: 700;
+				letter-spacing: -0.02em;
+				margin-top: 1.5em;
+				margin-bottom: 0.8em;
+			}
+			
+			/* Keep original nav styling */
+			#nav {
+				font-family: inherit; /* Use the original font from main.css */
+			}
+			
+			#nav ul li {
+				font-family: inherit; /* Use the original font from main.css */
+			}
+			
+			#nav ul li a {
+				font-family: inherit; /* Use the original font from main.css */
+			}
+			
+			h1 {
+				font-size: 2.8rem;
+				position: relative;
+			}
+			
+			h1::after {
+				content: "";
+				display: block;
+				width: 80px;
+				height: 4px;
+				background: var(--accent-color);
+				margin-top: 0.5rem;
+			}
+			
+			h2 {
+				font-size: 1.8rem;
+				border-left: 4px solid var(--accent-color);
+				padding-left: 15px;
+			}
+			
+			h3 {
+				font-size: 1.3rem;
+				color: var(--accent-color);
+			}
+			
+			p {
+				margin-bottom: 1.5rem;
+				font-weight: 300;
+				font-size: 1.05rem;
+			}
+			
+			ul {
+				padding-left: 1.2rem;
+			}
+			
+			li {
+				margin-bottom: 0.5rem;
+			}
+			
+			strong {
+				font-weight: 600;
+				color: var(--heading-color);
+			}
+			
+			a {
+				color: var(--accent-color);
+				text-decoration: none;
+				transition: all 0.2s ease;
+				font-weight: 500;
+			}
+			
+			a:hover {
+				color: #2d3fe1;
+				text-decoration: underline;
+			}
+			
+			.box.style1 {
+				background-color: var(--light-bg);
+				border-radius: 8px;
+				transition: transform 0.3s ease;
+				box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+			}
+			
+			.box.style1:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+			}
+			
+			.box.style1 h3 {
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+			}
+			
+			.box.style1 .icon.featured {
+				color: var(--accent-color);
+			}
+			
+			.box.style2 {
+				border-radius: 8px;
+				overflow: hidden;
+				transition: transform 0.3s ease;
+				box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+			}
+			
+			.box.style2:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+			}
+			
+			.box.style2 h3 {
+				margin-top: 1rem;
+				margin-bottom: 0.5rem;
+			}
+			
+			.image.featured img {
+				border-radius: 6px 6px 0 0;
+				transition: all 0.3s ease;
+			}
+			
+			.wrapper.style1 {
+				padding: 3rem 0;
+			}
+			
+			.wrapper.style2 {
+				background-color: #f7f9fc;
+				padding: 3rem 0;
+			}
+			
+			.wrapper.style3 {
+				padding: 3rem 0;
+			}
+			
+			.wrapper.style4 {
+				background-color: #f7f9fc;
+				padding: 3rem 0;
+			}
+			
+			.social li a {
+				border-radius: 50%;
+				transition: all 0.3s ease;
+			}
+			
+			.social li a:hover {
+				transform: translateY(-3px);
+			}
+			
+			footer {
+				margin-top: 2rem;
+			}
+		</style>
 		
 	</head>
 	<body class="is-preload">
@@ -41,7 +210,7 @@
 							<header>
 								<h1>Hi👋. I'm <strong>Hojjat Kamyabi</strong>.</h1>
 							</header>
-							<p>As a Web and Data Science master’s student in Germany,<br>I specialize in Data Analysis, SQL, and Python-based automation. With a passion for extracting insights from data, I work on solving real-world problems through technology and AI.</p>
+							<p>As a Web and Data Science master's student in Germany,<br>I specialize in Data Analysis, SQL, and Python-based automation. With a passion for extracting insights from data, I work on solving real-world problems through technology and AI.</p>
 						</div>
 					</div>
 				</div>
@@ -61,9 +230,9 @@
 								<h3>Data Analytics</h3>
 								<ul>
 									<li>Python (Pandas, Numpy, Seaborn)</li>
-									<li>SQL (SQLite, PostgreSQL)</li>
+									<li>SQL (MySQL, PostgreSQL)</li>
 									<li>Microsoft EXCEL</li>
-									<li>Visualization (Power BI, Tableau, Matplotlib)</li>
+									<li>Visualization (Power BI, Tableau)</li>
 								</ul>
 							</section>
 						</div>
@@ -74,8 +243,7 @@
 								<ul>
 									<li>ML (Tensorflow, Scikit-Learn)</li>
 									<li>Web Scraping (Selenium,beautifulsoup)</li>
-									<li>Docker</li>
-									<li>Airflow</li>
+									<li>Bash Scripting</li>
 								</ul>
 							</section>
 						</div>
@@ -85,7 +253,6 @@
 								<h3>Linux & Networking</h3>
 								<ul>
 									<li>Linux (LPIC-1 level)</li>
-									<li>Bash Scripting</li>
 									<li>Networking (CCNA)</li>
 									<li>Security Basics (CEH)</li>
 									<li>GIT</li>
@@ -128,20 +295,18 @@
 
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a target="_blank" rel="noreferrer noopener" href="./EXCEL_Cleaning.html" class="image featured"><img src="images/excel_banner.png" alt="" /></a>
-								<h3><a target="_blank" rel="noreferrer noopener" href="./EXCEL_Cleaning.html">Execl Dashboard</a></h3>
-								<p>Designed an interactive Excel dashboard using data visualizations and slicers to analyze credit distribution.</p>
-							</article>
-						</div>
-						
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
 								<a target="_blank" rel="noreferrer noopener" href="./sql_cleaning.html" class="image featured"><img src="images/SQL_LOGO.jpg" alt="" /></a>
 								<h3><a target="_blank" rel="noreferrer noopener" href="./sql_cleaning.html">Data Cleaning via SQL</a></h3>
 								<p>Data cleaning and transformation on the Motor Vehicle Repair and Towing dataset using SQL.</p>
 							</article>
 						</div>
-						
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a target="_blank" rel="noreferrer noopener" href="./EXCEL_Cleaning.html" class="image featured"><img src="images/excel_banner.png" alt="" /></a>
+								<h3><a target="_blank" rel="noreferrer noopener" href="./EXCEL_Cleaning.html">Execl Dashboard</a></h3>
+								<p>Designed an interactive Excel dashboard using data visualizations and slicers to analyze credit distribution.</p>
+							</article>
+						</div>
 						
 
 						<div class="col-4 col-6-medium col-12-small">
